@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
 
     {% if context.player_name %}
-      <title>Screenly OSE - {{context.player_name}}</title>
+      <title>Nanuly Sign - {{context.player_name}}</title>
     {% else %}
-      <title>Screenly OSE</title>
+      <title>Nanuly Sign</title>
     {% endif %}
     <link href="/static/css/bootstrap.css" rel="stylesheet" />
     <link href="/static/css/screenly.css" rel="stylesheet" />
@@ -38,24 +38,24 @@
           </a>
           <ul class="nav pull-right">
             {% if not context.up_to_date %}
-              <li class="update-available">
+              <!-- li class="update-available">
                 <a href="http://www.screenlyapp.com/ose.html#upgrade">
                   <i class="icon-circle-arrow-down icon-white"></i>
                   Update Available
                 </a>
-              </li>
+              </li -->
             {% endif %}
             <li>
               <a href="/settings">
                 <i class="icon-cog icon-white"></i>
-                Settings
+                설정
               </a>
             </li>
             <li class="divider-vertical"></li>
             <li>
               <a href="/system_info">
                 <i class="icon-tasks icon-white"></i>
-                System Info
+                시스템 정보
               </a>
             </li>
           </ul>
@@ -220,10 +220,10 @@
     <div id="footer">
       <div class="container">
         <div class="copy">
-          &copy; Screenly, Inc.
+          &copy; Nanuly Sign
         </div>
         <a id="screenly-logo" href="http://screenly.io/" target="_blank">
-          Screenly.io
+          www.nanu.ly
         </a>
       </div>
     </div>
