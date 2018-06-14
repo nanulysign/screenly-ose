@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
 
     {% if context.player_name %}
-      <title>Screenly OSE - {{context.player_name}}</title>
+      <title>Nanuly Sign - {{context.player_name}}</title>
     {% else %}
-      <title>Screenly OSE</title>
+      <title>Nanuly Sign</title>
     {% endif %}
       
     <link href="/static/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
@@ -345,18 +345,18 @@
             <div class="pull-right">
               <a id="previous-asset-button" class="btn" href="#">
                 <i class="icon-fast-backward"></i>
-                Previous Asset
+                이전
               </a>
               <a id="next-asset-button" class="btn" href="#">
                 <i class="icon-fast-forward"></i>
-                Next Asset
+                다음
               </a>
               <a id="add-asset-button" class="btn btn-primary" href="#">
                 <i class="icon-plus icon-white"></i>
-                Add Asset
+                추가
               </a>
             </div>
-            Schedule Overview
+            일정관리  
           </h1>
           {% if context.player_name %}
             <h2>{{context.player_name}}</h2>
@@ -368,7 +368,7 @@
         <div class="span12">
           <section>
             <div class="header">
-              Active assets
+             사용중 
             </div>
             <table class="table table-striped active-table">
               <thead style="display:none">
@@ -387,7 +387,7 @@
         <div class="span12">
           <section>
             <div class="header">
-              Inactive assets
+             대기중 
             </div>
             <table class="table table-striped inactive-table">
               <thead style="display:none">
@@ -409,17 +409,11 @@
       <div class="container">
         <div class="row">
           <div class="span6">
-            <span>Want to get more out of Screenly?
-              <a class="brand" href="http://www.screenlyapp.com/?utm_source=Screenly-OSE&amp;utm_medium=root-page&amp;utm_campaign=OSE" target="_blank">
-                <strong>Try Screenly Pro.</strong>
-              </a></span>
           </div>
           <div class="span6">
             <div id="subsribe-form-container"></div>
             <span>
-              <a>
-                <strong id="show-email-popover">Get the latest Screenly news directly in your mailbox.</strong>
-              </a>
+              <a></a>
             </span>
           </div>
         </div>
