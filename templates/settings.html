@@ -34,7 +34,8 @@
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="/">
-            <img src="static/img/screenly_ose_logo.png" />
+            Nanuly Sign
+            <!-- img src="static/img/screenly_ose_logo.png" / -->
           </a>
           <ul class="nav pull-right">
             {% if not context.up_to_date %}
@@ -67,7 +68,7 @@
       <div class="row">
         <div class="span12">
           <h1 class="page-header">
-            Settings
+            설정
           </h1>
 
           {% if context.flash %}
@@ -186,34 +187,46 @@
 
             <div class="form-actions">
               <input class="btn btn-primary" type="submit" value="Save Settings">
-              <a class="btn" href="/">Cancel</a>
+              <a class="btn" href="/">취소</a>
             </div>
           </form>
         </div>
 
         <div id="wifi-section" class="span12">
           <h1 class="page-header">
-            Reset wifi config
+           네트워크
           </h1>
           <p>Run it, and if the next boot does not have a network connection, you will be prompted to select a WiFi network. <br><b>Warning:</b> after pressing, a reboot is required. Web interface will not be available until reboot.</p>
           <div class="form-actions">
-            <button id="btn-reset" class="btn btn-primary" type="button">Re-run network detection</button>
+            <button id="btn-reset" class="btn btn-primary" type="button">네트워크 설정 초기화</button>
             </div>
         </div>
 
         <div id="backup-section" class="span12">
           <h1 class="page-header">
-            Backup
+            백업 
           </h1>
           <div class="form-actions">
             <input name="backup_upload" style="display:none" type="file">
-            <button id="btn-upload" class="btn btn-primary" type="button">Upload and Recover</button>
-            <button id="btn-backup" class="btn">Get backup</button>
+            <button id="btn-upload" class="btn btn-primary" type="button">백업복구 업로드</button>
+            <button id="btn-backup" class="btn">백업시작</button>
             <div class="progress progress-striped active" style="display:none">
               <div class="bar"></div>
             </div>
           </div>
         </div>
+
+        <div id="reset-section" class="span12">
+          <h1 class="page-header">
+            시스템 초기화
+          </h1>
+          <div class="form-actions">
+            <button id="btn-init" class="btn btn-primary" type="button">시스템 초기화</button>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     
