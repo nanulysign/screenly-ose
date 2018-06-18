@@ -659,6 +659,17 @@ class ResetWifiConfig(Resource):
 
         return '', 204
 
+class Init(Resource):
+    method_decorators = [api_response, auth_basic]
+
+    def get(self):
+        home = getenv('HOME')
+        file_path = path.join(home, '.screenly/screenly.db')
+
+        if path.isfile(file_path):
+            remove(file_path)
+
+        return '', 204
 
 class Info(Resource):
     method_decorators = [api_response, auth_basic]
@@ -724,6 +735,7 @@ api.add_resource(Recover, '/api/v1/recover')
 api.add_resource(AssetsControl, '/api/v1/assets/control/<command>')
 api.add_resource(Info, '/api/v1/info')
 api.add_resource(ResetWifiConfig, '/api/v1/reset_wifi')
+api.add_resource(Init, '/api/v1/init')
 
 try:
     my_ip = get_node_ip()
